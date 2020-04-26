@@ -498,6 +498,12 @@ main {
 .gallery img {
   width: 100%;
   max-width: 300px;
+  transition: all 0.1s ease-in-out;
+}
+.gallery img:hover {
+  box-shadow: 0 3px 10px 3px #d7d7d7;
+  transform: scale(1.05);
+  border: 3px solid #fff;
 }
 @media (max-width: 768px) {
   .gallery img {

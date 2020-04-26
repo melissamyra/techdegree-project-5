@@ -104,6 +104,12 @@ main {
   & img {
   width: 100%;
   max-width: 300px;
+  transition: all .1s ease-in-out;
+    &:hover{
+      box-shadow: 0 3px 10px 3px darken($background,10);
+      transform: scale(1.05);
+      border: 3px solid #fff;
+    }
     @include mq(max,$med) {
       //image gutters
       margin-bottom: 10px;
