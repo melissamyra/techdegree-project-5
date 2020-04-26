@@ -337,16 +337,19 @@ template {
   display: none;
 }
 
-#lg-download {
+/*================ LightGallery Plugin ================*/
+#lg-counter, #lg-download {
   display: none;
 }
-#lg-counter {
-  display: none;
+
+@media (max-width: 768px) {
+  .lg-actions .lg-next, .lg-actions .lg-prev {
+    display: none;
+  }
 }
 
 .lg-object.lg-image {
   max-width: 60%;
-  margin-bottom: 30px;
 }
 @media (max-width: 768px) {
   .lg-object.lg-image {
