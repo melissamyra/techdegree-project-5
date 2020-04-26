@@ -474,11 +474,6 @@ input:focus {
   min-height: calc(100vh - 94.34px);
 }
 
-#nothing {
-  color: gray;
-  display: none;
-}
-
 main {
   margin: 0 auto;
   display: flex;
@@ -501,8 +496,6 @@ main {
 }
 
 .gallery img {
-  object-fit: cover;
-  height: 300px;
   width: 100%;
   max-width: 300px;
 }

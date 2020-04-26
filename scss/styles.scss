@@ -72,11 +72,6 @@ input {
   min-height: calc(100vh - 94.34px);
 }
 
-#nothing {
-  color: gray;
-  display: none;
-}
-
 //main container for images
 main {
   margin: 0 auto;
@@ -107,8 +102,6 @@ main {
 //adjust each image size
 .gallery {
   & img {
-  object-fit: cover;
-  height: 300px;
   width: 100%;
   max-width: 300px;
     @include mq(max,$med) {
