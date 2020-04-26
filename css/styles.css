@@ -456,11 +456,11 @@ input {
 input::placeholder {
   color: #979797;
   font-style: italic;
+  text-transform: capitalize;
 }
 input:focus {
   outline: none;
   border: 1.8px solid #ff87a1;
-  text-transform: lowercase;
   background: #fff;
 }
 @media (min-width: 1024px) {

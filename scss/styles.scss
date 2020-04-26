@@ -52,11 +52,11 @@ input {
   &::placeholder {
     color: darken($search, 35);
     font-style: italic;
+    text-transform: capitalize;
   }
   &:focus {
     outline: none;
     border: 1.8px solid lighten($accent,10);
-    text-transform: lowercase;
     background: #fff;
   }
   @include mq(min,$lrg) {
