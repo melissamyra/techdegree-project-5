@@ -1,0 +1,14 @@
+//=============Media Queries==========
+
+@mixin mq($maxmin,$break) {
+  @media (#{$maxmin}-width: $break) {
+    @content;
+  }
+}
+
+// //max-width
+// @mixin max-mq($break) {
+//   @media (max-width: $break) {
+//     @content;
+//   }
+// }

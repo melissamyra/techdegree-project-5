@@ -1,0 +1,67 @@
+//================ LightGallery Plugin ================
+#lg {
+  &-download { //download button
+    display: none;
+  }
+  &-counter { //counter button
+    display: none;
+  }
+}
+
+.lg {
+  &-object {
+    &.lg-image { //main image
+      max-width: 60%;
+      margin-bottom: 30px;
+      @include mq(max,$med) {
+        max-width: 95%;
+      }
+    }
+  }
+  &-actions {
+    & .lg-prev { //left button
+      @include mq(min,$lrg) {
+        left: 80px;
+      }
+    }
+    & .lg-next { //right button
+      @include mq(min,$lrg) {
+        right: 80px;
+      }
+    }
+  }
+  &-backdrop.in { //backdrop
+    background: #15171a;
+    opacity: .9;
+  }
+  &-toolbar {
+    background: transparent;
+  }
+}
+
+//captions
+.lg-sub-html {
+  max-width: 600px;
+  margin: 0 auto;
+  bottom: 55px;
+  background : transparent;
+  text-align: left;
+  @include mq(max,$med) {
+    max-width: 99%;
+    background : rgba(0,0,0,.3);
+  }
+  & h3 {
+    font-size: 1.1rem;
+    display: inline;
+    @include mq(max,$med) {
+      font-size: .9rem;
+    }
+  }
+  & p {
+    font-size: 1rem;
+    display: inline;
+    @include mq(max,$med) {
+      font-size: .9rem;
+    }
+  }
+}
