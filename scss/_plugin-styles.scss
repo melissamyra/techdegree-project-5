@@ -1,10 +1,21 @@
-//================ LightGallery Plugin ================
+/*================ LightGallery Plugin ================*/
+
+%no-display {
+    @include no-dsp;
+}
+
+%mq-no-display {
+  @include mq(max,$med) {
+    @include no-dsp;
+  }
+}
+
 #lg {
   &-download { //download button
-    display: none;
+    @extend %no-display;
   }
   &-counter { //counter button
-    display: none;
+    @extend %no-display;
   }
 }
 
@@ -12,7 +23,6 @@
   &-object {
     &.lg-image { //main image
       max-width: 60%;
-      margin-bottom: 30px;
       @include mq(max,$med) {
         max-width: 95%;
       }
@@ -23,11 +33,13 @@
       @include mq(min,$lrg) {
         left: 80px;
       }
+      @extend %mq-no-display;
     }
     & .lg-next { //right button
       @include mq(min,$lrg) {
         right: 80px;
       }
+      @extend %mq-no-display;
     }
   }
   &-backdrop.in { //backdrop
