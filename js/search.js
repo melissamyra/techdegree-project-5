@@ -3,7 +3,7 @@ $(document).ready( function(){
   $('#search').on('keyup focus', () => {
     //save user input
     let search = $('#search').val().toUpperCase();
-    //***** loop through all a tag with lightGallery attributes *****
+    //***** loop through all a tags*****
     $('.gallery').each( (i, img) => {
       //save captions
       let string = $('.gallery')[i].getAttribute('data-sub-html').toUpperCase();
