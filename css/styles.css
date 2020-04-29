@@ -569,4 +569,15 @@ footer span {
   }
 }
 
+.notfound {
+  color: #a4a4a4;
+  font-style: italic;
+  font-size: 1.2rem;
+}
+@media (min-width: 768px) {
+  .notfound {
+    font-size: 1.5rem;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */

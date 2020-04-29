@@ -163,3 +163,14 @@ footer {
     margin-top: 80px;
   }
 }
+
+// ================ Not Found JS Text ================
+
+.notfound {
+  color: darken($background,30);
+  font-style: italic;
+  font-size: 1.2rem;
+  @include mq(min,$med) {
+    font-size: 1.5rem;
+  }
+}
